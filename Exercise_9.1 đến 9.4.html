@@ -1,0 +1,83 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+   <title>Contest Entry Form</title>
+   
+</head>
+
+<body>
+
+<h1>"Pimp My Shoes" Contest Entry Form</h1>
+
+<p>Want to trade in your old sneakers for a custom pair of Forcefields? Make a case for why your shoes have <em>got</em> to go and you may be one of ten lucky winners.</p>
+<form action="https://www.learningwebdesign.com/contest.php" method="post">
+
+<p>Contest Entry Information</p>
+
+<ul>
+<li>Name:<input type="text" name="username"></li>
+<li>Email Address:<input email="text" name="emailaddress"></li>
+<li>Telephone Number:<input type="Tel" name="Telephone"></li>
+<li>My shoes are SO old…</li>
+<br>
+<textarea 
+name="story" 
+rows="4" 
+cols="60" 
+maxlength="300" 
+placeholder="No more than 300 character long"></textarea>
+</ul>
+
+<h2>Design your custom Forcefields:</h2>
+
+      <fieldset>
+
+            <legend>Custom Shoe Design</legend>
+            <fieldset>
+              <legend>Color <em>(choose one)</em>:</legend>
+            <ul>
+            <li><label><input type="radio" name="color" value="Red"> Red</label></li>
+            <li><input type="radio" name="color" value="Blue">Blue</li>
+            <li><input type="radio" name="color" value="Black">Black</li>
+            <li><input type="radio" name="color" value="Silver">Silver</li>
+            </ul>
+            </fieldset>
+
+            <fieldset>
+             <legend>Features <em>(Choose as many as you want)</em> </legend>
+              <ul>
+              <li><input type="radio" name="features[]" value="laces"> Sparkley laces</li>
+              <li><input type="radio" name="features[]" value="logo" checked=""> Metallic logo</li>
+              <li><input type="radio" name="features[]" value="heels"> Light-up heels</li>
+              <li><input type="radio" name="features[]" value="mp3"> MP3-enabled</li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Size</legend>
+              <p>Sizes reflect standard men's sizes: <select name="Size" size="1">
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              </select>
+            </p>
+            </fieldset>
+
+      </fieldset>  
+
+
+
+
+
+<p>
+   <input type="submit" value="Pimp my shoes!">
+   <input type="reset">
+ </p>
+</body>
+</html>
